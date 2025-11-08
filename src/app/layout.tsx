@@ -20,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={inter.variable}>
-      <body className="antialiased">{children}</body>
+      <body className="min-h-screen flex items-center justify-center antialiased">
+        {children}
+      </body>
     </html>
   );
 }
+
