@@ -28,10 +28,6 @@
   --gradient-main: linear-gradient(90deg, var(--color-purple-300) 0%, var(--color-purple-400) 100%);
   --gradient-follow: linear-gradient(90deg, var(--color-blue) 0%, var(--color-purple-200) 100%);
 
-  --text-weight-normal: 400;
-  --text-weight-medium: 500;
-  --text-weight-semibold: 600;
-  --text-weight-bold: 700;
 }
 
 body {
