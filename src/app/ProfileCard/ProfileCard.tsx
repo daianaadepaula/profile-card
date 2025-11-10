@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { UsersRound, Mail, Check } from "lucide-react";
 import Avatar from "../components/Avatar";
 import ProfileStats from "./ProfileStats";
@@ -10,9 +10,23 @@ const ProfileCard = () => {
   const [isFollowing, setIsFollowing] = useState(false);
   const [followers, setFollowers] = useState(980);
 
+  useEffect(() => {
+    const storedFollow = localStorage.getItem("isFollowing");
+    const storedFollowers = localStorage.getItem("followers");
+
+    if (storedFollow) setIsFollowing(storedFollow === "true");
+    if (storedFollowers) setFollowers(Number(storedFollowers));
+  }, []);
+
   const handleFollow = () => {
-    setIsFollowing((prev) => !prev);
-    setFollowers((prev) => (isFollowing ? prev - 1 : prev + 1));
+    const newFollow = !isFollowing;
+    const newFollowers = newFollow ? followers + 1 : followers - 1;
+
+    setIsFollowing(newFollow);
+    setFollowers(newFollowers);
+
+    localStorage.setItem("isFollowing", String(newFollow));
+    localStorage.setItem("followers", String(newFollowers));
   };
 
   return (
