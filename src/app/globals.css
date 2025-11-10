@@ -27,9 +27,12 @@
 
   --gradient-main: linear-gradient(90deg, var(--color-purple-300) 0%, var(--color-purple-400) 100%);
   --gradient-follow: linear-gradient(90deg, var(--color-blue) 0%, var(--color-purple-200) 100%);
-
 }
 
-body {
+.bg-gradient-main {
   background: var(--gradient-main);
+}
+
+.bg-gradient-follow {
+  background: var(--gradient-follow);
 }
