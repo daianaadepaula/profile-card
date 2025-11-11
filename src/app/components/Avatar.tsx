@@ -14,7 +14,9 @@ const Avatar = ({
   className = "",
 }: AvatarProps) => {
   return (
-    <div className={`rounded-full border-4 border-white overflow-hidden ${className}`}>
+    <div
+      className={`rounded-full border-4 border-white overflow-hidden ${className}`}
+    >
       <Image
         src={src}
         alt={alt}

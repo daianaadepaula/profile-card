@@ -18,7 +18,7 @@ const ProfileStats = ({
     ];
 
   return (
-    <div className="flex justify-between items-center w-3/5">
+    <div className="flex justify-center items-center w-[75%] gap-2 sm:gap-6 md:gap-8">
       {stats.map((stat) => (
         <StatItem key={stat.label} value={stat.value ?? 0} label={stat.label} />
       ))}
