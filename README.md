@@ -17,12 +17,15 @@ Implementar um componente de card com:
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Lucide Icons](https://lucide.dev/)
+- [Jest](https://jestjs.io/)
+- [Next Testing Library](https://nextjs.org/docs/pages/guides/testing/jest)
 
 ## ⚙️ Funcionalidades
 
 - Clique em **Seguir** muda o estado para **Seguindo**
 - Cor e ícone do botão são alterados dinamicamente
 - Contador de seguidores é atualizado em tempo real
+- Persistência de estado com `localStorage`
 - Layout totalmente **responsivo**
 - Fidelidade ao design original do [Figma](https://www.figma.com/design/JO0vsAS75zlc0Vrx0tA5WZ/Untitled?node-id=0-1&t=8UDm9Y2PkOhwYS6a-1)
 
@@ -41,6 +44,24 @@ npm install
 # Rodar o servidor de desenvolvimento
 npm run dev
 ```
+
+## 🧪 Testes
+
+```bash
+# Executar os testes
+npm run test
+```
+
+Eles validam:
+
+* Renderização dos componentes
+* Comportamento do botão “Seguir”
+* Persistência de estado no localStorage
+
+## ♿ Acessibilidade
+
+* Uso de aria-label e aria-pressed nos botões.
+* Foco visível ao navegar via teclado (focus:ring).
 
 ## 🌐 Deploy
 
