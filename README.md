@@ -1,7 +1,6 @@
-# 💼 Desafio Frontend Júnior — Profile Card
+# 💼 Card de Perfil interativo
 
-Este projeto foi desenvolvido como parte do processo seletivo para **Desenvolvedor Frontend Júnior**.
-O objetivo é criar um **Card de Perfil interativo** baseado no design fornecido no Figma.
+Este projeto implementa um **Card de Perfil interativo**, utilizando Next.js e Tailwind CSS, com foco em componentização, interatividade e fidelidade ao layout definido no Figma.
 
 ## 🎯 Objetivo
 
